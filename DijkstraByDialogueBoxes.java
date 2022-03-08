@@ -10,7 +10,7 @@ import java.awt.TextField;
 import java.awt.event.*;
 import java.util.*;  
 
-public class question1 implements ActionListener {
+public class DijkstraByDialogueBoxes implements ActionListener {
 	 class edge{
 		int weight;
 		String fromvertex;
