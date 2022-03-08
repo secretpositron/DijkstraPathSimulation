@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 import javax.swing.*;
 
-import first.java.question1.edge;
+import first.java.DijkstraByDialogueBoxes.edge;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -19,7 +19,7 @@ import java.awt.event.MouseMotionListener;
 import java.awt.geom.Line2D;
 import java.util.ArrayList;
 
-public class question3 extends JPanel implements MouseListener,MouseMotionListener,ActionListener{
+public class DijkstraThroughUI extends JPanel implements MouseListener,MouseMotionListener,ActionListener{
      ArrayList<Point> points;
      class edge{
     	 Point p1;
@@ -40,7 +40,7 @@ public class question3 extends JPanel implements MouseListener,MouseMotionListen
      HashMap<Point,ArrayList<Point>>hm=new   HashMap<Point,ArrayList<Point>>();
      int sxpoint,sypoint,expoint,eypoint;
      static JFrame frame;
-    question3() {
+    DijkstraThroughUI() {
         points = new ArrayList<Point>();
         setBackground(Color.WHITE);
         jb=new JButton("Add vertex");
@@ -130,7 +130,7 @@ public class question3 extends JPanel implements MouseListener,MouseMotionListen
             @Override
             public void run() {
                 frame = new JFrame();
-                frame.add(new question3());
+                frame.add(new DijkstraThroughUI());
                 frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                 frame.setSize(800, 800);
                 frame.setVisible(true);
