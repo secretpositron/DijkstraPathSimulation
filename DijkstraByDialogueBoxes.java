@@ -61,7 +61,7 @@ public class DijkstraByDialogueBoxes implements ActionListener {
     ArrayList<node> arraylist;
     JFrame jf;
      JButton addvertex,searchvertex,deletevertex,modifyvertex,addedge,searchedge,deleteedge,modifyedge,importfile,exportgraph,printpath,screenint;
-    question1(){
+    DijkstraByDialogueBoxes(){
     	 jf=new JFrame("GRAPH REPRESENTATION");
     	jf.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     	addvertex=new JButton("AddVertex");
@@ -508,6 +508,6 @@ public class DijkstraByDialogueBoxes implements ActionListener {
 	 }
 	}
 	public static void main(String[] args) {
-		new question1();
+		new DijkstraByDialogueBoxes();
 	}
 }
